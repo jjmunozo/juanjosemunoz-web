@@ -1,0 +1,21 @@
+<title>Respaldo del blog</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{--bg:#f4f5f8;--fg:#14172a;--muted:#6b6f84;--line:#dfe1e9}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111318;--fg:#eceef5;--muted:#9a9db0;--line:#2c2f38;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111318;--fg:#eceef5;--muted:#9a9db0;--line:#2c2f38;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,sans-serif;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px}
+main{max-width:66ch;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1{margin:0;font-size:1.8rem}code{font-size:.9em}p{margin:0}li{margin:4px 0}
+</style>
+<main>
+<h1>Respaldo del blog</h1>
+<p>Copia de trabajo de la migración de juanjosemunoz.com, guardada mientras el proyecto no tiene repositorio en GitHub. No es un sitio público.</p>
+<ul>
+<li>Todo va dentro de <code>respaldo-proyecto.json</code> (cada clave es una ruta del proyecto).</li>
+<li><code>src/content/blog/*.md</code>: los 366 artículos en Markdown, con fecha, eje, tema, serie y duplicados en el encabezado.</li>
+<li><code>inventario-blog.csv</code>: el inventario completo.</li>
+<li><code>tools/</code>: los scripts de rastreo, exportación e imágenes, y la clasificación en TSV.</li>
+</ul>
+<p>Las 228 imágenes de los artículos (105 MB) no van en este respaldo. <code>tools/imagenes-origen.json</code> guarda la URL original de cada una para volver a bajarlas de Webflow mientras el sitio siga publicado.</p>
+</main>
